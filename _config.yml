@@ -1,11 +1,11 @@
 # Site settings
 author: Asif Kamal
-title: 
+title: Software Engineering
 header-img: img/home-bg.png
 email: asif_kamal@hotmail.com
 copyright_name: Asif Kamal
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Blurts about my Flatiron School experiences.
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  asif-kamal

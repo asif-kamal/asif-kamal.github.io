@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "What I Understand of Coding"
-date:       2020-01-12 18:55:39 +0000
+date:       2020-01-12 13:55:40 -0500
 permalink:  what_i_understand_of_coding
 ---
 

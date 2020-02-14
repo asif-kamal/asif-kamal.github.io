@@ -8,7 +8,7 @@ permalink:  getting_data_from_two_different_href_values
 
 For my CLI project, I chose to scrape the National Science Foundation website for articles on new discoveries. On the initial page where the articles are listed I scraped the name, date and url as object attributes. Thre was one problem though, because in my code when I go "one level deep" I ask the user if s/he would like to view an excerpt of the article picked in the cli from the printed list.
 
-![image](https://ibb.co/NV9LJgQ)
+[](https://ibb.co/NV9LJgQ) 
 
 As you can see in the image, the excerpt for the article is accesible by the link, on another webpage. There may be a way to workaround this and grab text from a url link while scraping, but in the interest of time I decided to parse through the article  'brief description' page with nokogiri. 
 

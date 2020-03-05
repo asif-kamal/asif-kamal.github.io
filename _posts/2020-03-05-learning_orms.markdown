@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Learning ORMs"
-date:       2020-03-05 13:52:15 +0000
+date:       2020-03-05 08:52:16 -0500
 permalink:  learning_orms
 ---
 

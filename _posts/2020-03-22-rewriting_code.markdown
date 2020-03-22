@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rewriting Code"
-date:       2020-03-22 16:06:09 +0000
+date:       2020-03-22 12:06:10 -0400
 permalink:  rewriting_code
 ---
 

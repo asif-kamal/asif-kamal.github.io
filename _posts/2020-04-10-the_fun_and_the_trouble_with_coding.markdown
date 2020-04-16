@@ -33,7 +33,7 @@ was for some reason not working in my project index.erb file. I was using the fi
 
 ActiveRecord Validations
 
-They are used to *validate* data being saved to the database. If for example for an email params a user incorrectly types in an email address, the entry will not be kept. The methods     .create    .save     and   .update    all use validations automatically to ensure no old records are resaved. If I use !(bang) on the  .create    .save   and    .update methods I will receive an exception for invaild data. 
+They are used to *validate* data being saved to the database. If for example for an email params a user incorrectly types in an email address, the entry will not be kept. The methods     .create    .save     and   .update    all use validations automatically to ensure the data being saved is valid. If I use !(bang) on the  .create    .save   and    .update methods I will receive an exception for invaild data. 
 
 ActiveRecord validations help me keep an active record of data in my database. Which is the point.
 

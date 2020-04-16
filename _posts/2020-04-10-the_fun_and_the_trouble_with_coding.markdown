@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The fun and the trouble with coding."
-date:       2020-04-10 14:39:55 +0000
+date:       2020-04-10 10:39:55 -0400
 permalink:  the_fun_and_the_trouble_with_coding
 ---
 
@@ -26,5 +26,17 @@ I also ran into the problem of making sure my views files displayed the right in
 @project.title
 ```
 was for some reason not working in my project index.erb file. I was using the find_by_title method instead of the find_by_id method I am using now to look up projects in my projects controller. Not too clear why it's working now, but hopefully I can find out why soon.
+
+
+
+**EDIT:**
+
+ActiveRecord Validations
+
+They are used to *validate* data being saved to the database. If for example for an email params a user incorrectly types in an email address, the entry will not be kept. The methods     .create    .save     and   .update    all use validations automatically to ensure no old records are resaved. If I use !(bang) on the  .create    .save   and    .update methods I will receive an exception for invaild data. 
+
+ActiveRecord validations help me keep an active record of data in my database. Which is the point.
+
+
 
 

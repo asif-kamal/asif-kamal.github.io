@@ -58,5 +58,5 @@ Here I used `animal_reports_path`.
 ![Using animal_reports_path](https://i.ibb.co/R43WCc7/Screen-Shot-2020-10-03-at-8-06-39-AM.png)
 
 Not worrying too much on looks I worked mainly on getting the create action working in harmony with my views. 
-I would say this project was not too difficult when you know what to prioritize versus not knowing. I enjoyed working through the Rails module and I would say I definitely have a greater grasp on how things work :)
+I would say this project was not too difficult when you know what to prioritize versus not knowing. I enjoyed working through the Rails module and I would say I definitely have a greater grasp on how things work.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails App: Zoo App"
-date:       2020-10-03 12:18:01 +0000
+date:       2020-10-03 08:18:02 -0400
 permalink:  rails_app_zoo_app
 ---
 
@@ -14,11 +14,16 @@ I started by creating a new Rails app through the terminal.
 rails new ZooApp
 ```
 
-Probably the toughest part about my app was building the ReportsController. Since the report model serves as a join table between User and Animal I had to find a way to create a new report using both foreign keys.
+Probably the toughest part about my app was building the ReportsController. Since the report model serves as a join table between User and Animal I had to find a way to create a new report using both foreign keys. 
+
 
 ![ReportsController](https://i.ibb.co/fpVDKw5/Screen-Shot-2020-10-03-at-7-58-19-AM.png)
 
-I was not sure at first whether to have the nested new route coming from the user side or the animal side. 
+
+I decided to have the current user create the report and select from a drop down of the species he or she was working with. It made more sense to have seeded data of animals already in the database, and to allow for the creation of new animal instances when one was not found.
+
+
+I was not sure at first whether to have the nested new route coming from the user side or the animal side. I decided the user should be the main focus and since the goal of ZooApp was to facilitate recording user input, any new input should come from the user only.
 
 ```
  animal_reports GET    /animals/:animal_id/reports(.:format)                                                    reports#index
@@ -44,7 +49,7 @@ I was not sure at first whether to have the nested new route coming from the use
                           user_report GET    /users/:user_id/reports/:id(.:format)                                               
 ```
 
-I decided to route all new report instances through the user parent resource, and to have the reports index view display only the specific animal.  
+Now all new report instances are routed through the user parent resource. The reports index view is where all reports on the specific animal life is displayed. In this way only reports that belong to certain animal queries are shown. And the user's show page is where one's own reports on any animal life can be seen. 
 
 Here I used `new_user_report_path`.
 ![Using new_user_report_path](https://i.ibb.co/CP2rGxr/Screen-Shot-2020-10-03-at-8-06-15-AM.png)

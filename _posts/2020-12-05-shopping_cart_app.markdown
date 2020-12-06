@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Shopping Cart App"
-date:       2020-12-06 03:44:07 +0000
+date:       2020-12-05 22:44:08 -0500
 permalink:  shopping_cart_app
 ---
 
@@ -15,12 +15,12 @@ I started by running `rails new javascript-shopping-cart-backend --api --databas
 
 Creating the CRUD actions needed for fetching item data took me no time. An index action for Items Controller to display all the json data brought my attention to how I should have items rendered if the user selected a category.
 
-![Migration files](https://ibb.co/zVV04z3)
-![Dropdown](https://ibb.co/xMNpPTX)
+![Migration files](https://i.ibb.co/N22HyM0/Screen-Shot-2020-12-05-at-10-04-09-PM.png)
+![Dropdown](https://i.ibb.co/wKf93mB/Screen-Shot-2020-12-05-at-10-03-42-PM.png)
 
 The dropdown selection worked through an AJAX call through the category id of the items. The option value of the category selected in HTML is used in the url of the fetch request as the id for a nested route: `${CATEGORIES_URL}/${id}/items` . 
 
-![Seed Data](https://ibb.co/zVV04z3)
+![Seed Data](https://i.ibb.co/N22HyM0/Screen-Shot-2020-12-05-at-10-04-09-PM.png)
 
 I had used seed data with items assigned category ids to make simpler rendering the specific items on the DOM. 
 
@@ -29,7 +29,7 @@ Styling had been an issue with my project which I dealt with by implementing Boo
 For each item in the json data I created a `renderItemCard` function which appended each div card to the `<main>`  tage in the html.
 
 After successfully having the items rendered, I moved the quantity plus/minus buttons to a table where the total is calculated. This made more sense. I kept the add to cart button in the div card of each item so the user can decide the quantity after it has been added to the cart. 
-![Quantity plus and minus buttons](https://ibb.co/cxf6rh8)
+![Quantity plus and minus buttons](https://i.ibb.co/g6qSRZW/Screen-Shot-2020-12-05-at-10-28-22-PM.png)
 
 I had originally worked on creating purely constructor functions. Later, after getting my app to fully function I switched over to using classes. I divided up my index.js file into three files called: ApiService.js, Item.js and ItemForm.js. 
 Most of the functions I created are in index.js which apply to manipulating items once they have been added to the cart.

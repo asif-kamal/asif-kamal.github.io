@@ -21,7 +21,7 @@ For my NotesForm and NotesList components I used the react hook, useState. I als
 
 My NotesList component currently looks like this:
 
-![using useState React Hook](https://pasteboard.co/db2ce88d-8cc3-4a4a-9207-9ba28dfd1c1e)
+![using useState React Hook](https://imgur.com/sOksTfy)
 
 
 I do see why redux is useful as it keeps all our data in one place, in the state. I plan to create new action creators and a reducer for setting notes instead of using useState. 
